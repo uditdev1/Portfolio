@@ -33,7 +33,7 @@ export const fullstack = [
     },
     {
         img: "https://github.com/rajputshashank003/Chess.v.0.2.1/blob/main/image.png?raw=true",
-        title: "ChessV",
+        title: "ChessWe",
         link: "https://chessWe.netlify.app",
         description: [
             "Developed ChessWe, a real-time multiplayer chess platform using React, Node.js, Socket.io, and Chess.js.",
@@ -42,7 +42,7 @@ export const fullstack = [
             "Implemented Solana-based betting matches, secure game state handling, and a fully responsive, animation-smooth UI across devices.",
             "Integrated generative AI to provide real-time move suggestions, strategic hints, and gameplay guidance during matches."
         ],
-        small_description: "ChessV is an online chess game contains features like real-time gameplay , calling etc.",
+        small_description: "ChessWe is an online chess game contains features like real-time gameplay , calling etc.",
         duration: "June 2025 - Aug 2025",
         roles: 'FullStack developer',
         techStack: ['React', 'Blockchain', 'Javascript', 'WebRTC', 'WebSocket', 'Tailwind', 'GenAi', 'Three.js'],

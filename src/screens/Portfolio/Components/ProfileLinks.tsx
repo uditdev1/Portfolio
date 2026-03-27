@@ -7,7 +7,7 @@ const ProfileLinks = () => {
     const socials = [
         { link: 'github.com/uditdev1' , name: "GitHub", handle: "@uditdev1", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
         { link: 'linkedin.com/in/uditdev' , name: "LinkedIn", handle: "@uditdev", icon: <img src='/Logo/Linkedin_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
-        { link: 'leetcode.com/uditdev' , name: "GeeksforGeeks", handle: "@uditdeu8zt", icon: <img src='/Logo/LeetCode_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
+        { link: 'geeksforgeeks.org/profile/uditdeu8zt?tab=activity' , name: "GeeksforGeeks", handle: "@uditdeu8zt", icon: <img src='/Logo/GFG_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
         { link: (head(web_components) as any)?.link , name: (head(web_components) as any)?.title, handle: "Discovery Bar", icon: <img src={`/componentImages/${(head(web_components) as any)?.img}`} className="h-[48px] w-[48px] bg-zinc-950" /> },
     ];
 

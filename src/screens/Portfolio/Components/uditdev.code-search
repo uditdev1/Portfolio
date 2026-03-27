@@ -1,0 +1,52 @@
+# Query: uditdev
+# ContextLines: 1
+
+21 results - 7 files
+
+index.html:
+  69      "sameAs": [
+  70:         "https://github.com/uditdev1",
+  71:         "https://www.linkedin.com/in/uditdev"
+  72      ],
+
+package-lock.json:
+  1  {
+  2:   "name": "uditdev_portfolio",
+  3    "version": "0.0.0",
+
+  7      "": {
+  8:       "name": "uditdev_portfolio",
+  9        "version": "0.0.0",
+
+package.json:
+  1  {
+  2:   "name": "uditdev_portfolio",
+  3    "private": true,
+
+src\components\Footer.tsx:
+   9              <span className="text-zinc-400">Inspired by ncdai</span>
+  10:             <span onClick={() => navigate('https://www.linkedin.com/in/uditdev/')} className="cursor-pointer hover:underline text-zinc-500">Built by uditdev</span>
+  11          </BorderWrapper>
+
+src\components\projectData.ts:
+  34      {
+  35:         img: "https://github.com/uditdev1/Chess.v.0.2.1/blob/main/image.png?raw=true",
+  36          title: "ChessWe",
+
+  84      {
+  85:         img: "https://github.com/uditdev003/Airbnb-MajorProject/raw/main/image.png",
+  86          title: "Airbnb",
+
+src\screens\Portfolio\Components\About.tsx:
+  41                              on platform {" "}
+  42:                             <HoverChip label='leetcode.com/uditdev'><span onClick={() => navigate('https://leetcode.com/uditdev')} className="font-semibold">LeetCode</span></HoverChip>, achieving a{" "}
+  43                              <span className="font-semibold">1550+ contest rating</span> and
+
+src\screens\Portfolio\Components\ProfileLinks.tsx:
+   8      const socials = [
+   9:         { link: 'x.com/_uditdev' , name: "X (formerly Twitter)", handle: "@_uditdev", icon: <XLogo /> },
+  10:         { link: 'github.com/uditdev003' , name: "GitHub", handle: "@uditdev003", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
+  11:         { link: 'linkedin.com/in/uditdev/' , name: "LinkedIn", handle: "@uditdev", icon: <img src='/Logo/Linkedin_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
+  12:         { link: 'leetcode.com/uditdev' , name: "LeetCode", handle: "@uditdev", icon: <img src='/Logo/LeetCode_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
+  13:         { link: 'npmjs.com/~uditdev' , name: "NPM", handle: "@uditdev", icon: <img src='/Logo/npm_logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
+  14          { link: (head(web_components) as any)?.link , name: (head(web_components) as any)?.title, handle: "Discovery Bar", icon: <img src={`/componentImages/${(head(web_components) as any)?.img}`} className="h-[48px] w-[48px] bg-zinc-950" /> },

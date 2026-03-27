@@ -1,0 +1,84 @@
+export const techStack = [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "Redis",
+    "Go (Golang)",
+    "SQL",
+    "C",
+    "C++",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "Express.js",
+    "React.js",
+    "Mongoose",
+    "Prisma",
+    "Three.js",
+    "GSAP",
+    "Framer Motion",
+    "Locomotive Scroll",
+    "Material UI",
+    "Tailwind CSS",
+    "Leaflet.js",
+    "Pintura",
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Git",
+    "GitHub",
+    "WebSocket",
+    "WebRTC",
+    "Object-Oriented Programming (OOP)"
+];
+
+export const wizcommerce_roles = [{
+    title: 'Full Stack Developer',
+    from: 'April 2025',
+    to: 'I',
+    type: 'Internship',
+    projectLink: 'https://studio.wizcommerce.com',
+    description: [
+        'Built the responsive frontend of WizStudio, contributing to key modules like Image Editors, Product, Project, and Review using React.js, TypeScript, Pintura, WebGL and Material UI.',
+        'Developed advanced WebGL - powered image editors, including a custom Pintura - based editor from Figma designs, an image expansion editor using dual canvases, and a multiple multi - layer canvas editor supporting comprehensive editing and compositing with high - performance, responsive rendering.',
+        'Developed AI- assisted line - drawing annotation tools by integrating AI - based coordinate extraction and rendering SVG layers with fully transformable controls while maintaining low - latency interactions.',
+        'Collaborated with backend and design teams to ship features end - to - end.',
+        'Improved website performance through modular, scalable component architecture and coordinated multi - API data flows, delivering 20 % + smoother interactions and highly responsive user experiences.',
+    ],
+    techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
+},
+];
+
+export const freelance_roles = [{
+    title: 'Bharapups',
+    from: 'July 2025',
+    to: 'Sept 2025',
+    type: 'Part-time',
+    projectLink: 'https://bharatpups.shop',
+    description: [
+        'Built BharatPups, a freelance project, a dog-selling platform with clean UI, advanced search, and explore features for seamless browsing, backed by lightweight microservice for faster data fetching.',
+        'Integrated Google authentication, direct WhatsApp messaging, and call support to streamline buyer–seller communication, along with webhook - driven event handling and a responsive design.'
+    ],
+    techStack: ['React', 'TypeScript', 'Javascript', 'Node.js', 'MongoDB', 'Docker', 'Webhooks', 'framer-motion'],
+    icon: (
+        <div className="flex z-[1] mt-[2px] size-6 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-300 ring-1 ring-edge ring-offset-1 ring-offset-background" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-drafting-compass size-4 __web-inspector-hide-shortcut__" aria-hidden="true"><path d="m12.99 6.74 1.93 3.44"></path><path d="M19.136 12a10 10 0 0 1-14.271 0"></path><path d="m21 21-2.16-3.84"></path><path d="m3 21 8.02-14.26"></path><circle cx="12" cy="5" r="2"></circle></svg>
+        </div>
+    )
+}];
+
+export const education_roles = [{
+    title: 'Chitkara University - B.E Computer Science',
+    from: 'Aug 2022', 
+    to: 'June 2026',
+    description: [
+        'Gained strong foundations in Computer Science concepts and learned multiple programming languages including C, C++, Java, and JavaScript, along with problem - solving using Data Structures & Algorithms.',
+        'Built practical experience through projects, labs, and self - learning, developing skills in full - stack web development(MERN), debugging, teamwork, and real - world application design.'
+    ],
+    techStack: ['React', 'TypeScript', 'Javascript', 'DSA', 'Docker', 'AWS'],
+    icon: (
+        <div className="flex z-[1] mt-[2px] size-6 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-500 border border-zinc-300 ring-1 ring-edge ring-offset-1 ring-offset-background" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-graduation-cap size-4" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+        </div>
+    )
+}];

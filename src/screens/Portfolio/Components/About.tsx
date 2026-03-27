@@ -36,17 +36,17 @@ const About = () => {
 
                         <li>
                             Solved over{" "}
-                            <span className="font-semibold">600+ Data Structures & Algorithms problems</span>{" "}
+                            <span className="font-semibold">300+ Data Structures & Algorithms problems</span>{" "}
                             on platform{" "}
                             <HoverChip label='geeksforgeeks.org/uditdeu8zt'>
                                 <span
-                                    onClick={() => navigate('https://www.geeksforgeeks.org/profile/uditdeu8zt')}
+                                    onClick={() => navigate('https://www.geeksforgeeks.org/profile/uditdeu8zt?tab=activity://www.geeksforgeeks.org/profile/uditdeu8zt')}
                                     className="font-semibold cursor-pointer"
                                 >
                                     GeeksforGeeks
                                 </span>
                             </HoverChip>, achieving a{" "}
-                            <span className="font-semibold">1550+ contest rating</span> and
+                            <span className="font-semibold">1550+ Coding Score</span> and
                             continuously improving problem-solving and algorithmic thinking.
                         </li>
                     </ul>

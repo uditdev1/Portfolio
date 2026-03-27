@@ -4,7 +4,7 @@ import { HoverChip } from '../../../components/HoverChip'
 
 const About = () => {
     const navigate = useNavigate();
-    
+
     return (
         <>
             <BorderWrapper boxClass="text-[36px] px-[12px] h-fit leading-10 font-[500]">
@@ -14,8 +14,7 @@ const About = () => {
                 <div className="text-gray-800 text-[16px] leading-relaxed tracking-wide">
                     <ul className="list-disc ml-6 space-y-2 marker:text-zinc-300">
                         <li>
-                            <span className="font-[600]">Full Stack Developer</span> with{" "}
-                            <span className="font-semibold">1+ year of experience</span>, proficient in{" "}
+                            <span className="font-[600]">Full Stack Developer</span> proficient in{" "}
                             <span className="font-semibold">full-stack development</span>, combining
                             pixel-perfect frontend design with reliable and efficient backend logic.
                         </li>
@@ -28,23 +27,29 @@ const About = () => {
                         </li>
 
                         <li>
-                            Implemented{" "}
-                            <span className="font-semibold">webhooks</span> and{" "}
-                            <span className="font-semibold">payment gateways</span> for
-                            real-time order tracking in Golang, secure transactions, and automated updates
-                            across distributed microservices.
+                            Built real-time applications using{" "}
+                            <span className="font-semibold">Socket.io</span> and{" "}
+                            <span className="font-semibold">WebRTC</span>, featuring live multiplayer
+                            gameplay, audio/video calls, and integrated{" "}
+                            <span className="font-semibold">Solana-based</span> payment and betting systems.
                         </li>
 
                         <li>
                             Solved over{" "}
                             <span className="font-semibold">600+ Data Structures & Algorithms problems</span>{" "}
-                            on platform {" "}
-                            <HoverChip label='geeksforgeeks.org/uditdeu8zt'><span onClick={() => navigate('https://www.geeksforgeeks.org/profile/uditdeu8zt')} className="font-semibold">GeeksforGeeks</span></HoverChip>, achieving a{" "}
+                            on platform{" "}
+                            <HoverChip label='geeksforgeeks.org/uditdeu8zt'>
+                                <span
+                                    onClick={() => navigate('https://www.geeksforgeeks.org/profile/uditdeu8zt')}
+                                    className="font-semibold cursor-pointer"
+                                >
+                                    GeeksforGeeks
+                                </span>
+                            </HoverChip>, achieving a{" "}
                             <span className="font-semibold">1550+ contest rating</span> and
                             continuously improving problem-solving and algorithmic thinking.
                         </li>
                     </ul>
-
                 </div>
             </BorderWrapper>
         </>

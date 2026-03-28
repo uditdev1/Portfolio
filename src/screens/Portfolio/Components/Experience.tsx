@@ -1,5 +1,8 @@
 import BorderWrapper from '../../../components/BorderWrapper'
-import { education_roles, freelance_roles, wizcommerce_roles } from './utils'
+import { education_roles,
+     freelance_roles,
+     // wizcommerce_roles
+     } from './utils'
 import ExperienceBox from './ExperienceBox'
 
 const Experience = () => {
@@ -9,11 +12,11 @@ const Experience = () => {
             <BorderWrapper boxClass="text-[36px] px-[12px] h-fit leading-11 font-[500]">
                 Experience
             </BorderWrapper>
-            <ExperienceBox
+            {/* <ExperienceBox
                 company={'WizCommerce'}
                 companyIcon={<img src='/Logo/wizcommerce_logo.jpg' className='h-[24px] w-[24px] ' />}
                 roles={wizcommerce_roles}
-            />
+            /> */}
             <ExperienceBox
                 company={'Freelance'}
                 companyIcon={

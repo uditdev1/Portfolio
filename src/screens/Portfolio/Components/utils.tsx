@@ -2,8 +2,8 @@ export const techStack = [
     "Java",
     "JavaScript",
     "TypeScript",
-    "Redis",
-    "Go (Golang)",
+    // "Redis",
+    // "Go (Golang)",
     "SQL",
     "C",
     "C++",
@@ -32,22 +32,22 @@ export const techStack = [
     "Object-Oriented Programming (OOP)"
 ];
 
-export const wizcommerce_roles = [{
-    title: 'Full Stack Developer',
-    from: 'April 2025',
-    to: 'I',
-    type: 'Internship',
-    projectLink: 'https://studio.wizcommerce.com',
-    description: [
-        'Built the responsive frontend of WizStudio, contributing to key modules like Image Editors, Product, Project, and Review using React.js, TypeScript, Pintura, WebGL and Material UI.',
-        'Developed advanced WebGL - powered image editors, including a custom Pintura - based editor from Figma designs, an image expansion editor using dual canvases, and a multiple multi - layer canvas editor supporting comprehensive editing and compositing with high - performance, responsive rendering.',
-        'Developed AI- assisted line - drawing annotation tools by integrating AI - based coordinate extraction and rendering SVG layers with fully transformable controls while maintaining low - latency interactions.',
-        'Collaborated with backend and design teams to ship features end - to - end.',
-        'Improved website performance through modular, scalable component architecture and coordinated multi - API data flows, delivering 20 % + smoother interactions and highly responsive user experiences.',
-    ],
-    techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
-},
-];
+// export const wizcommerce_roles = [{
+//     title: 'Full Stack Developer',
+//     from: 'April 2025',
+//     to: 'I',
+//     type: 'Internship',
+//     projectLink: 'https://studio.wizcommerce.com',
+//     description: [
+//         'Built the responsive frontend of WizStudio, contributing to key modules like Image Editors, Product, Project, and Review using React.js, TypeScript, Pintura, WebGL and Material UI.',
+//         'Developed advanced WebGL - powered image editors, including a custom Pintura - based editor from Figma designs, an image expansion editor using dual canvases, and a multiple multi - layer canvas editor supporting comprehensive editing and compositing with high - performance, responsive rendering.',
+//         'Developed AI- assisted line - drawing annotation tools by integrating AI - based coordinate extraction and rendering SVG layers with fully transformable controls while maintaining low - latency interactions.',
+//         'Collaborated with backend and design teams to ship features end - to - end.',
+//         'Improved website performance through modular, scalable component architecture and coordinated multi - API data flows, delivering 20 % + smoother interactions and highly responsive user experiences.',
+//     ],
+//     techStack: ['React', 'TypeScript', 'Material UI', 'Pintura', 'Git', 'GitHub'],
+// },
+// ];
 
 export const freelance_roles = [{
     title: 'Bharapups',
@@ -68,7 +68,7 @@ export const freelance_roles = [{
 }];
 
 export const education_roles = [{
-    title: 'Chitkara University - B.E Computer Science',
+    title: 'Raj Kumar Goel Institute of Technology - B.Tech Computer Science',
     from: 'Aug 2022', 
     to: 'June 2026',
     description: [

@@ -39,14 +39,14 @@ src\components\projectData.ts:
 
 src\screens\Portfolio\Components\About.tsx:
   41                              on platform {" "}
-  42:                             <HoverChip label='leetcode.com/uditdev'><span onClick={() => navigate('https://leetcode.com/uditdev')} className="font-semibold">LeetCode</span></HoverChip>, achieving a{" "}
+  42:                             <HoverChip label='geekforgeeks.com/uditdeu8zt'><span onClick={() => navigate('https://www.geeksforgeeks.org/profile/uditdeu8zt?tab=activity')} className="font-semibold">GeeksforGeeks</span></HoverChip>, achieving a{" "}
   43                              <span className="font-semibold">1550+ contest rating</span> and
 
 src\screens\Portfolio\Components\ProfileLinks.tsx:
    8      const socials = [
-   9:         { link: 'x.com/_uditdev' , name: "X (formerly Twitter)", handle: "@_uditdev", icon: <XLogo /> },
+   9:        // { link: 'x.com/_uditdev' , name: "X (formerly Twitter)", handle: "@_uditdev", icon: <XLogo /> },
   10:         { link: 'github.com/uditdev003' , name: "GitHub", handle: "@uditdev003", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
   11:         { link: 'linkedin.com/in/uditdev/' , name: "LinkedIn", handle: "@uditdev", icon: <img src='/Logo/Linkedin_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
-  12:         { link: 'leetcode.com/uditdev' , name: "LeetCode", handle: "@uditdev", icon: <img src='/Logo/LeetCode_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
+  12:         { link: 'geekforgeeks.com/uditdeu8zt' , name: "GeeksforGeeks", handle: "@uditdeu8zt", icon: <img src='/Logo/GFG_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
   13:         { link: 'npmjs.com/~uditdev' , name: "NPM", handle: "@uditdev", icon: <img src='/Logo/npm_logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
   14          { link: (head(web_components) as any)?.link , name: (head(web_components) as any)?.title, handle: "Discovery Bar", icon: <img src={`/componentImages/${(head(web_components) as any)?.img}`} className="h-[48px] w-[48px] bg-zinc-950" /> },

@@ -5,6 +5,7 @@ import MenuIcon from "./MenuIcon.tsx";
 import { includes, map } from "lodash";
 import { ScreensOptions } from "./utils.tsx";
 import { useNavigate } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -43,6 +44,8 @@ const Header = () => {
                     </div>
                 ))
             }
+
+            <DarkModeToggle />
         </BorderWrapper>
     )
 }

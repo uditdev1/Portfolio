@@ -24,10 +24,13 @@ export const HoverChip = ({ label, children }: HoverChipProps) => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 6, scale: 0.95 }}
                         transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="absolute -top-10 z-50 whitespace-nowrap rounded-full bg-black px-3 py-1 text-xs font-[24px] text-white shadow-lg"
+                        className="absolute -top-10 z-50 whitespace-nowrap rounded-full 
+                                   bg-zinc-900 dark:bg-zinc-700 
+                                   px-3 py-1 text-xs text-white 
+                                   shadow-lg transition-colors duration-300"
                     >
                         {label}
-                        <div className="absolute left-1/2 top-full -translate-x-1/2 border-x-4 border-t-4 border-x-transparent border-t-black" />
+                        <div className="absolute left-1/2 top-full -translate-x-1/2 border-x-4 border-t-4 border-x-transparent border-t-zinc-900 dark:border-t-zinc-700" />
                     </motion.div>
                 )}
             </AnimatePresence>

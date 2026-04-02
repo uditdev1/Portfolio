@@ -47,60 +47,45 @@
 
     <!-- Robots -->
     <meta name="robots" content="index, follow" />
+
+    <!-- ✅ Prevent flash of wrong theme on page load -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        })();
+    </script>
 </head>
 
 <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Udit Dev",
-    "url": "https://udit.is-a.dev",
-    "image": "https://udit.is-a.dev/logo.webp",
-    "jobTitle": "Full Stack Developer",
-    "description": "Full Stack Developer skilled in MERN stack with hands-on experience in building scalable web applications and real-time systems.
-        Experienced in developing interactive and high-performance UIs using React, Three.js, and GSAP.
-        Built advanced projects including a real-time multiplayer chess application with WebSocket and WebRTC integration, a full-stack Airbnb clone, a MERN-based food ordering platform,
-        and an AI-powered DSA tutor with audio solutions and code debugging features.
-        Proficient in Node.js, Express, MongoDB, PostgreSQL, and Prisma, with knowledge of Solana-based decentralized payments and modern development tools.
-        Solved 300+ DSA problems and continuously improving problem-solving and system design skills.",
-    "sameAs": [
-        "https://github.com/uditdev1",
-        "https://www.linkedin.com/in/uditdev"
-    ],
-    "knowsAbout": [
-        "Java",
-        "JavaScript",
-        "TypeScript",
-        "SQL",
-        "C",
-        "C++",
-        "HTML",
-        "CSS",
-        "Node.js",
-        "Express.js",
-        "React.js",
-        "Mongoose",
-        "Prisma",
-        "Three.js",
-        "GSAP",
-        "Material UI",
-        "Tailwind CSS",
-        "Leaflet.js",
-        "MongoDB",
-        "PostgreSQL",
-        "MySQL",
-        "Git",
-        "GitHub",
-        "WebSocket",
-        "WebRTC",
-        "System Design"
-    ]
-  }
-  </script>
-
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Udit Dev",
+        "url": "https://udit.is-a.dev",
+        "image": "https://udit.is-a.dev/logo.webp",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer skilled in MERN stack with hands-on experience in building scalable web applications and real-time systems.",
+        "sameAs": [
+            "https://github.com/uditdev1",
+            "https://www.linkedin.com/in/uditdev"
+        ],
+        "knowsAbout": [
+            "Java", "JavaScript", "TypeScript", "SQL", "C", "C++",
+            "HTML", "CSS", "Node.js", "Express.js", "React.js",
+            "Mongoose", "Prisma", "Three.js", "GSAP", "Material UI",
+            "Tailwind CSS", "Leaflet.js", "MongoDB", "PostgreSQL",
+            "MySQL", "Git", "GitHub", "WebSocket", "WebRTC", "System Design"
+        ]
+    }
+    </script>
 </body>
 
 </html>

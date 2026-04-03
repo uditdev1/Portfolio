@@ -5,18 +5,18 @@ import { HoverChip } from "../../../components/HoverChip";
 
 const ProfileLinks = () => {
     const socials = [
-        { link: 'github.com/uditdev1' , name: "GitHub", handle: "@uditdev1", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
-        { link: 'linkedin.com/in/uditdev' , name: "LinkedIn", handle: "@uditdev", icon: <img src='/Logo/Linkedin_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
-        { link: 'geeksforgeeks.org/profile/uditdeu8zt?tab=activity' , name: "GeeksforGeeks", handle: "@uditdeu8zt", icon: <img src='/Logo/GFG_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
-        { link: (head(web_components) as any)?.link , name: (head(web_components) as any)?.title, handle: "Discovery Bar", icon: <img src={`/componentImages/${(head(web_components) as any)?.img}`} className="h-[48px] w-[48px] bg-zinc-950" /> },
+        { link: 'github.com/uditdev1', name: "GitHub", handle: "@uditdev1", icon: <img src='/Logo/Github_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
+        { link: 'linkedin.com/in/uditdev', name: "LinkedIn", handle: "@uditdev", icon: <img src='/Logo/Linkedin_logo.webp' className="h-[48px] w-[48px] bg-white" /> },
+        { link: 'geeksforgeeks.org/profile/uditdeu8zt?tab=activity', name: "GeeksforGeeks", handle: "@uditdeu8zt", icon: <img src='/Logo/GFG_Logo.png' className="h-[48px] w-[48px] bg-zinc-950" /> },
+        { link: (head(web_components) as any)?.link, name: (head(web_components) as any)?.title, handle: "Discovery Bar", icon: <img src={`/componentImages/${(head(web_components) as any)?.img}`} className="h-[48px] w-[48px] bg-zinc-950" /> },
     ];
 
     return (
         <BorderWrapper>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[12px] overflow-hidden bg-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[12px] overflow-hidden bg-white dark:bg-gray-950 transition-colors duration-300">
                 {map(socials, (s, i) => (
                     <div
-                        onClick={() => window.open(`${ size(socials) === i + 1 ? '' : 'https://'}${s.link}`, '_blank')}
+                        onClick={() => window.open(`${size(socials) === i + 1 ? '' : 'https://'}${s.link}`, '_blank')}
                         style={{
                             ...(i % 2 !== 0) ? { borderRight: '0px' } : { borderLeft: '0px' },
                             ...(i <= 1 && window.innerWidth > 600 && { borderTop: '0px' }),
@@ -26,30 +26,37 @@ const ProfileLinks = () => {
                             ...(i === size(socials) - 1 && window.innerWidth < 600 && { borderBottom: '0px' }),
                         }}
                         key={i}
-                        className="flex items-center relative border-1 border-neutral-200 justify-between px-3 py-4 hover:bg-neutral-50 transition-colors"
+                        className="flex items-center relative border-1 border-neutral-200 dark:border-neutral-800 justify-between px-3 py-4 
+                                   bg-white dark:bg-gray-950 
+                                   hover:bg-neutral-50 dark:hover:bg-gray-900 
+                                   transition-colors duration-300 cursor-pointer"
                     >
                         <div className="flex items-center gap-[12px]">
-                            <div className="w-12 h-12 flex items-center justify-center bg-zinc-950 rounded-[12px] overflow-hidden ">
+                            <div className="w-12 h-12 flex items-center justify-center bg-zinc-950 dark:bg-zinc-800 rounded-[12px] overflow-hidden transition-colors duration-300">
                                 {s.icon}
                             </div>
                             <div>
-                                <div className="font-medium text-[16px]">{s.name}</div>
-                                <div className="text-[14px] text-neutral-500">{s.handle}</div>
+                                <div className="font-medium text-[16px] text-zinc-900 dark:text-white transition-colors duration-300">
+                                    {s.name}
+                                </div>
+                                <div className="text-[14px] text-neutral-500 dark:text-neutral-400 transition-colors duration-300">
+                                    {s.handle}
+                                </div>
                             </div>
                         </div>
                         <HoverChip label="Component link">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={2.5}
-                            stroke="currentColor"
-                            className="w-[18px] cursor-pointer h-[18px] text-neutral-400 -rotate-[45deg]"
-                        >
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L21 10.5m0 0l-3.75 3.75M21 10.5H8" />
-                        </svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={2.5}
+                                stroke="currentColor"
+                                className="w-[18px] cursor-pointer h-[18px] text-neutral-400 dark:text-neutral-500 -rotate-[45deg] transition-colors duration-300"
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L21 10.5m0 0l-3.75 3.75M21 10.5H8" />
+                            </svg>
                         </HoverChip>
-                        <div className="border-1 border-neutral-200 h-[13.5px] w-[13.5px] absolute -bottom-[13.5px] -left-[13.5px] "></div>
+                        <div className="border-1 border-neutral-200 dark:border-neutral-800 h-[13.5px] w-[13.5px] absolute -bottom-[13.5px] -left-[13.5px] transition-colors duration-300"></div>
                     </div>
                 ))}
             </div>

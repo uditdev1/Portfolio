@@ -4,17 +4,21 @@ import { fullstack } from '../../../components/projectData'
 import { map, size, startsWith } from 'lodash'
 
 const Projects = () => {
-
     return (
         <>
-            <BorderWrapper boxClass="text-[36px] px-[12px] h-fit leading-11 font-[500]">
+            <BorderWrapper boxClass="text-[36px] px-[12px] h-fit leading-11 font-[500] text-zinc-950 dark:text-white transition-colors duration-300">
                 Projects
             </BorderWrapper>
             <BorderWrapper boxClass="">
-                { map(fullstack, (opt: any, i : number) => (
+                {map(fullstack, (opt: any, i: number) => (
                     <ProjectBox
                         project={opt.title}
-                        logo={<img src={startsWith(opt?.img, 'https') ? opt.img : `/componentImages/${opt.img}`} className='h-[48px] w-[48px] rounded-[12px] ' />}
+                        logo={
+                            <img
+                                src={startsWith(opt?.img, 'https') ? opt.img : `/componentImages/${opt.img}`}
+                                className='h-[48px] w-[48px] rounded-[12px]'
+                            />
+                        }
                         duration={opt.duration}
                         description={opt.description}
                         techStack={opt.techStack}

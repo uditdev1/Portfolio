@@ -3,14 +3,22 @@ import SmMenu from "./SmMenu.tsx";
 import { useRef, useState } from "react";
 import MenuIcon from "./MenuIcon.tsx";
 import { includes, map } from "lodash";
-import { ScreensOptions } from "./utils.tsx";
 import { useNavigate } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
+
+const ScreensOptions = ['portfolio', 'components', 'designs'];
+// 'blockchain' hidden for now
 
 const Header = () => {
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
     const triggerClose = useRef<any>(null);
+
+    const isDark = document.documentElement.classList.contains('dark');
+
+    const isActive = (opt: string) =>
+        (location.pathname === '/' && opt === 'portfolio') ||
+        includes(location.pathname, opt.toLowerCase());
 
     const renderSmallDisplayMenu = () => {
         return (
@@ -26,25 +34,22 @@ const Header = () => {
     };
 
     return (
-        <BorderWrapper boxClass={'flex text-[18px] justify-end gap-[12px] px-[12px] py-[8px]'}>
+        <BorderWrapper boxClass={'flex text-[18px] items-center justify-end gap-[12px] px-[12px] py-[8px]'}>
             {renderSmallDisplayMenu()}
-            {
-                map(ScreensOptions, (opt: string) => (
-                    <div
-                        style={{
-                            ...(
-                                ((location.pathname === '/' && opt === 'portfolio')
-                                    || includes(location.pathname, opt.toLowerCase()))
-                                && { color: 'black' }
-                            ),
-                        }}
-                        onClick={() => navigate(`/${opt}`)}
-                        className="text-neutral-400 max-md:hidden cursor-pointer first-letter:uppercase" >
-                        {opt}
-                    </div>
-                ))
-            }
-
+            {map(ScreensOptions, (opt: string) => (
+                <div
+                    key={opt}
+                    style={{
+                        ...(isActive(opt) && {
+                            color: isDark ? '#ffffff' : '#000000'
+                        }),
+                    }}
+                    onClick={() => navigate(`/${opt}`)}
+                    className="text-neutral-400 max-md:hidden cursor-pointer first-letter:uppercase hover:text-black dark:hover:text-white transition-colors duration-200"
+                >
+                    {opt}
+                </div>
+            ))}
             <DarkModeToggle />
         </BorderWrapper>
     )
